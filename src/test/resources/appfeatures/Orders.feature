@@ -1,3 +1,4 @@
+@orders
 Feature: Order information
 
 @sanity @functional
@@ -14,7 +15,7 @@ And user is at the orders page
 When user clicks on current order
 Then user should see track order information
 
-@regression
+@regression 
 Scenario: cancelled order info
 Given user should be logged into app
 And user is at the orders page
