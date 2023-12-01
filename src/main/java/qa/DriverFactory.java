@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
-	WebDriver driver ;
+	static WebDriver driver ;
 	
 	public WebDriver initBrowser(String browsername)
 	{
@@ -22,4 +22,10 @@ public class DriverFactory {
 		
 	}
 
+	public static WebDriver getDriver()
+	{
+		return driver;
+	}
+	
+	
 }

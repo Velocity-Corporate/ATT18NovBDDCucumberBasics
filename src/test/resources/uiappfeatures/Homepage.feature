@@ -15,5 +15,5 @@ When I see the sport toys then I click on it
 Scenario: Login to app
 Given I am at landing page
 When user click on signin button
-And user enters username as ""
-And user enters password as "" with signin
+And user enters username as "8176867662"
+And user enters password as "123456" with signin
