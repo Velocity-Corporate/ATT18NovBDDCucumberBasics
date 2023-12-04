@@ -9,9 +9,11 @@ import io.cucumber.testng.CucumberOptions;
 		
 		glue = {"uiappfeatures"},
 		
-		plugin = {"pretty"},
+		plugin = {"pretty", "html:target/cucumber-reports/reports.html"},
 		
-		publish = true
+		publish = true,
+		
+		tags = "@basic"
 		
 		
 		)
