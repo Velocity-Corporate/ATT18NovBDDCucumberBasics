@@ -6,7 +6,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		
 		features = {"src\\test\\resources\\appfeatures\\Profile.feature"},
-		glue = {"steps"}
+		glue = {"steps"},
+		
+		dryRun = true
 		
 		
 		

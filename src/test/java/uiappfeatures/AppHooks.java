@@ -28,11 +28,19 @@ public class AppHooks {
 		
 		prop.load(fis);
 		
-		String browserName= prop.getProperty("browser");
+		String configFileBrowsername= prop.getProperty("browser");
+		
+		String commandPromptBrowserName = System.getProperty("cliBrowser");
 		 
+		if(commandPromptBrowserName != null)
+		{
+			configFileBrowsername= commandPromptBrowserName;
+		}
+		
+		
 		 df = new DriverFactory();
 		
-		 driver = df.initBrowser(browserName);
+		 driver = df.initBrowser(configFileBrowsername);
 		
 		driver.manage().window().maximize();
 		
